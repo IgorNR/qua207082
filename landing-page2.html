@@ -19,6 +19,7 @@
             background-color: gray;
             align-items: center;
             padding: 5px 30px;
+            color: white;
         }
 
         nav a {
@@ -35,7 +36,13 @@
             display: flex;
         }
 
-        #principal h2 {            
+        #principal div {
+            width: 50%;
+            margin: 30px;
+            text-align: left;
+        }
+
+        #principal h2 {
             font-size: 200%;
             max-width: 250px;
         }
@@ -52,33 +59,34 @@
             width: 300px;
             background-color: gray;
             border: 2px solid black;
+            font-weight: bold;
         }
 
         #principal iframe {
-            width: 100%;
-            height: 100%;
-            position: absolute;
             position: absolute;
             right: 0;
             top: 0;
-            width: 320px;
+            height: 300px;
+            width: 380px;
             padding: 10px;
             font-size: 80%;
             line-height: 21px;
         }
 
         #carrossel {
-           display: flex;
-           justify-content: center;
+            display: flex;
+            justify-content: center;
         }
 
         #carrossel div {
             height: 100px;
             width: 150px;
             background-color: gray;
-            margin: 10px;                        
+            margin: 10px;
         }
+
         
+
 
 
         #lista {
@@ -118,7 +126,7 @@
             text-align: center;
         }
 
-        body {            
+        body {
             margin: auto;
         }
 
@@ -127,6 +135,41 @@
             height: 100vh;
             flex-direction: column;
             justify-content: space-between;
+        }
+
+        hr {
+            border: 1px solid rgb(0, 0, 0);
+            /* Altera a cor e a espessura da borda */
+
+        }
+
+        #noticias {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .noticia {
+            width: 300px;
+            margin: 80px;            
+        }
+        .noticia div{
+            border: 2px solid black;
+            border-radius: 100%;
+            float: left;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            margin-right: 10px;
+            margin: 7px;
+        }
+        .noticia h3{
+            font-size: 200%;
+            
+        }
+        .noticia p{
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -141,7 +184,7 @@
                 <nav>
                     <a href="facebook.com"> <img src="./face.png" alt="" style="width: 25px;"></a>
                     <a href="instagram.com"> <img src="./Insta.png" alt="" style="width: 25px;"></a>
-                    <a href="whatsapp.com"> <img src="./Whats1.png" alt="" style="width: 30px;"></a>
+                    <a href="whatsapp.com"> <img src="./Whats.png" alt="" style="width: 30px;"></a>
                 </nav>
             </header>
 
@@ -154,7 +197,7 @@
                     </p>
                     <button>Quero Começar Agora</button>
                 </div>
-                
+
                 <div>
                     <iframe src="https://www.youtube.com/embed/kU4E_OgnGcQ"
                         title="Como Fazer uma LANDING PAGE | Aprenda em 7 Minutos" frameborder="0"
@@ -163,54 +206,69 @@
                 </div>
             </section>
 
+            <hr>
 
-            <section id="lista">
-                <div class="caixa">
-                    <h3>Rápido</h3>
-                    <p>Obtenha resultados em tempo recorde com nossa solução.</p>
-                </div>
-                <div class="caixa">
-                    <h3>Simples</h3>
-                    <p>Interface amigável para todos os níveis de experiência.</p>
-                </div>
-                <div class="caixa">
-                    <h3>Seguro</h3>
-                    <p>Seus dados estão protegidos com criptografia de ponta.</p>
-                </div>
-                <div class="caixa">
-                    <h3>Seguro</h3>
-                    <p>Seus dados estão protegidos com criptografia de ponta.</p>
-                </div>
-                <div class="caixa">
-                    <h3>Seguro</h3>
-                    <p>Seus dados estão protegidos com criptografia de ponta.</p>
-                </div>
-                <div class="caixa">
-                    <h3>Seguro</h3>
-                    <p>Seus dados estão protegidos com criptografia de ponta.</p>
+            <section id="carrossel">
+                <div>
+
                 </div>
 
-            </section>  
+                <div>
+
+                </div>
+
+                <div>
+
+                </div>
+
+                <div>
+
+                </div>
+
+            </section>
+
+            <hr>
+
+            <section id="noticias">
+                <p>
+                <div class="noticia">
+                    <div>1</div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="noticia">
+                    <div>2</div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="noticia">
+                    <div>3</div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                </p>
+                <br>
+               <p>
+                <div class="noticia">
+                    <div>4</div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="noticia">
+                    <div>5</div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="noticia">
+                    <div>6</div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                </p>
+            </section>
         </div>
+        
 
-        <section id="carrossel">
-            <div>
-        
-            </div>
-        
-            <div>
-        
-            </div>
-        
-            <div>
-        
-            </div>
-        
-            <div>
-        
-            </div>
-        
-        </section>
 
         <div id="grupo02">
 
