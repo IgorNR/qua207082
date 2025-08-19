@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Marca</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            border: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: gray;
+            align-items: center;
+            padding: 5px 30px;
+        }
+
+        nav a {
+            /*background-color: black;*/
+            color: white;
+            padding: 10px 15px;
+            margin: 0px 2px;
+        }
+
+        #principal {
+            background-color: rgb(161, 145, 145);
+            text-align: center;
+            position: relative;
+            display: flex;
+        }
+
+        #principal h2 {            
+            font-size: 200%;
+            max-width: 250px;
+        }
+
+        #principal p {
+            margin-top: 20px;
+            font-size: 90%;
+
+        }
+
+        #principal button {
+            padding: 20px;
+            margin: 30px 0;
+            width: 300px;
+            background-color: gray;
+            border: 2px solid black;
+        }
+
+        #principal iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 320px;
+            padding: 10px;
+            font-size: 80%;
+            line-height: 21px;
+        }
+
+        #carrossel {
+           display: flex;
+           justify-content: center;
+        }
+
+        #carrossel div {
+            height: 100px;
+            width: 150px;
+            background-color: gray;
+            margin: 10px;                        
+        }
+        
+
+
+        #lista {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #lista .caixa {
+            background-color: gray;
+            width: 200px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .caixa h3 {
+            padding-bottom: 10px;
+
+        }
+
+        #depoimentos {
+            text-align: center;
+            background-color: gray;
+            padding: 10px;
+            display: flex;
+        }
+
+        #depoimentos * {
+            padding: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        body {            
+            margin: auto;
+        }
+
+        #conteiner {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="conteiner">
+        <div id="grupo01">
+
+            <header>
+                <h1>Minha Marca</h1>
+                <nav>
+                    <a href="facebook.com"> <img src="./face.png" alt="" style="width: 25px;"></a>
+                    <a href="instagram.com"> <img src="./Insta.png" alt="" style="width: 25px;"></a>
+                    <a href="whatsapp.com"> <img src="./Whats1.png" alt="" style="width: 30px;"></a>
+                </nav>
+            </header>
+
+
+            <section id="principal">
+                <div>
+                    <h2>Transforma suas ideias em realidade</h2>
+                    <p>Nosso produto ajuda você a alcançar seus objetivos
+                        de forma, simples, rápida e eficiente.
+                    </p>
+                    <button>Quero Começar Agora</button>
+                </div>
+                
+                <div>
+                    <iframe src="https://www.youtube.com/embed/kU4E_OgnGcQ"
+                        title="Como Fazer uma LANDING PAGE | Aprenda em 7 Minutos" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+
+
+            <section id="lista">
+                <div class="caixa">
+                    <h3>Rápido</h3>
+                    <p>Obtenha resultados em tempo recorde com nossa solução.</p>
+                </div>
+                <div class="caixa">
+                    <h3>Simples</h3>
+                    <p>Interface amigável para todos os níveis de experiência.</p>
+                </div>
+                <div class="caixa">
+                    <h3>Seguro</h3>
+                    <p>Seus dados estão protegidos com criptografia de ponta.</p>
+                </div>
+                <div class="caixa">
+                    <h3>Seguro</h3>
+                    <p>Seus dados estão protegidos com criptografia de ponta.</p>
+                </div>
+                <div class="caixa">
+                    <h3>Seguro</h3>
+                    <p>Seus dados estão protegidos com criptografia de ponta.</p>
+                </div>
+                <div class="caixa">
+                    <h3>Seguro</h3>
+                    <p>Seus dados estão protegidos com criptografia de ponta.</p>
+                </div>
+
+            </section>  
+        </div>
+
+        <section id="carrossel">
+            <div>
+        
+            </div>
+        
+            <div>
+        
+            </div>
+        
+            <div>
+        
+            </div>
+        
+            <div>
+        
+            </div>
+        
+        </section>
+
+        <div id="grupo02">
+
+            <section id="depoimentos">
+
+                <img src="./avatar.png" alt="" style="width: auto; height: 50px;">
+                <p>"Mudou completamente minha forma de trabalhar. Recomendo!"</p>
+                <br>
+
+                <img src="./avatar.png" alt="" style="width: auto; height: 50px;">
+                <p>"Excelente atendimento e resultados incríveis!"</p>
+                <br>
+            </section>
+
+            <footer>
+                &copy; 2025 MinhaMarca - Todos os direitos reservados.
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
