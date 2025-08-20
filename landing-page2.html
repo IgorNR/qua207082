@@ -30,7 +30,6 @@
         }
 
         #principal {
-            background-color: rgb(161, 145, 145);
             text-align: center;
             position: relative;
             display: flex;
@@ -43,13 +42,14 @@
         }
 
         #principal h2 {
-            font-size: 200%;
+            font-size: 230%;
             max-width: 250px;
+            font-weight: bold;
         }
 
         #principal p {
             margin-top: 20px;
-            font-size: 90%;
+            font-size: 95%;
 
         }
 
@@ -60,6 +60,7 @@
             background-color: gray;
             border: 2px solid black;
             font-weight: bold;
+            font-size: 130%;
         }
 
         #principal iframe {
@@ -85,10 +86,6 @@
             margin: 10px;
         }
 
-        
-
-
-
         #lista {
             display: flex;
             justify-content: center;
@@ -109,37 +106,10 @@
 
         }
 
-        #depoimentos {
-            text-align: center;
-            background-color: gray;
-            padding: 10px;
-            display: flex;
-        }
-
-        #depoimentos * {
-            padding: 10px;
-        }
-
-        footer {
-            background-color: black;
-            color: white;
-            text-align: center;
-        }
-
-        body {
-            margin: auto;
-        }
-
-        #conteiner {
-            display: flex;
-            height: 100vh;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
         hr {
-            border: 1px solid rgb(0, 0, 0);
-            /* Altera a cor e a espessura da borda */
+            border: 1px solid rgba(27, 26, 26, 0.39);
+            width: 80%;
+            margin: auto;
 
         }
 
@@ -148,11 +118,13 @@
             justify-content: space-between;
             flex-wrap: wrap;
         }
+
         .noticia {
-            width: 300px;
-            margin: 80px;            
+            width: 270px;
+            margin: 30px;
         }
-        .noticia div{
+
+        .noticia div {
             border: 2px solid black;
             border-radius: 100%;
             float: left;
@@ -164,12 +136,53 @@
             margin-right: 10px;
             margin: 7px;
         }
-        .noticia h3{
+
+        .noticia h3 {
             font-size: 200%;
-            
+
         }
-        .noticia p{
-            margin-top: 5px;
+
+        .noticia p {
+            margin-top: 10px;
+        }
+
+        #depoimentos {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .depoimento {
+            padding: 30px;
+        }
+
+        .foto {
+            background-color: gray;
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin-right: 15px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: gray;
+            color: black;
+            text-align: center;
+            padding: 15px;
+            font-size: 120%;
+        }
+
+        body {
+            margin: auto;
+            width: 1000px;
+            border: 2px solid gray;
+            background-color: white;
+        }
+
+        html {
+            background-color: #dedede;
         }
     </style>
 </head>
@@ -191,11 +204,11 @@
 
             <section id="principal">
                 <div>
-                    <h2>Transforma suas ideias em realidade</h2>
-                    <p>Nosso produto ajuda você a alcançar seus objetivos
-                        de forma, simples, rápida e eficiente.
+                    <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>
-                    <button>Quero Começar Agora</button>
+                    <button>CTA Button</button>
                 </div>
 
                 <div>
@@ -230,64 +243,83 @@
             <hr>
 
             <section id="noticias">
-                <p>
+
                 <div class="noticia">
                     <div>1</div>
                     <h3>Lorem Ipsum</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
                 <div class="noticia">
                     <div>2</div>
                     <h3>Lorem Ipsum</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
                 <div class="noticia">
                     <div>3</div>
                     <h3>Lorem Ipsum</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
-                </p>
-                <br>
-               <p>
                 <div class="noticia">
                     <div>4</div>
                     <h3>Lorem Ipsum</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
                 <div class="noticia">
                     <div>5</div>
                     <h3>Lorem Ipsum</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
                 <div class="noticia">
                     <div>6</div>
                     <h3>Lorem Ipsum</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
-                </p>
+
             </section>
         </div>
-        
 
 
-        <div id="grupo02">
+        <hr>
 
-            <section id="depoimentos">
 
-                <img src="./avatar.png" alt="" style="width: auto; height: 50px;">
-                <p>"Mudou completamente minha forma de trabalhar. Recomendo!"</p>
-                <br>
+        <section id="depoimentos">
 
-                <img src="./avatar.png" alt="" style="width: auto; height: 50px;">
-                <p>"Excelente atendimento e resultados incríveis!"</p>
-                <br>
-            </section>
+            <div class="depoimento">
+                <div class="foto"><img src="./avatar1.png" alt="" style="width: 150px; height: 150px;"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h4>- Lorem Ipsum</h4>
+            </div>
 
-            <footer>
-                &copy; 2025 MinhaMarca - Todos os direitos reservados.
-            </footer>
 
-        </div>
+            <div class="depoimento">
+                <div class="foto"><img src="./avatar1.png" alt="" style="width: 150px; height: 150px;"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h4>- Lorem Ipsum</h4>
+            </div>
+
+        </section>
+
+        <footer>
+            &copy; 2025 MinhaMarca - Todos os direitos reservados.
+        </footer>
+
+
     </div>
 
 </body>
