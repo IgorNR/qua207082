@@ -31,9 +31,8 @@ li {
     background-color: #f1f1f1;
     border: 1px solid #d4d4d4;    
     cursor: pointer;
-    list-style-type: none;
-    width: 200px;
-    
+    list-style-type: none;    
+    margin: 4px;
     
  }
 li:hover { 
@@ -59,6 +58,7 @@ li:first-child {
     bottom: 0;
     top: 0;
     right: 0;
+    margin: 4px 0px;
  }
 .wrapper { 
     position: relative;
@@ -84,4 +84,6 @@ a:hover{
     text-decoration: none;
     
 }
-#bottom p{ }
+#bottom p{
+    margin: 0;
+ }
