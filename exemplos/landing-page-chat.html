@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Marca</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            border: none;
+        }
+
+        body {
+            margin: auto;
+            width: 1000px;
+            border: 2px solid gray;
+            background-color: white;
+        }
+
+        html {
+            background-color: #dedede;
+        }
+
+        #inicio img {
+            width: 300px;
+            height: 60px;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            background-color: #33658a;
+            align-items: center;
+            padding: 5px 30px;
+            color: white;
+        }
+
+        #nav_superior {
+            color: white;
+            padding: 10px 15px;
+            margin: 0px 2px;
+        }
+
+
+
+        hr {
+            border: 1px solid rgba(27, 26, 26, 0.39);
+            width: 80%;
+            margin: auto;
+        }
+
+
+
+
+
+        #principal h2 {
+            font-size: 230%;
+            max-width: 250px;
+            font-weight: bold;
+        }
+
+        #principal p {
+            margin-top: 20px;
+            font-size: 95%;
+            max-width: 50%;
+
+        }
+
+        #principal button {
+            padding: 20px;
+            margin: 30px 0;
+            width: 300px;
+            background-color: gray;
+            border: 2px solid black;
+            font-weight: bold;
+            font-size: 130%;
+        }
+
+        #principal div {
+            max-width: 420px;
+            margin: 0;
+            padding: 0 10px;
+        }
+
+        #principal {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 30px;
+
+        }
+
+
+        #principal img {
+            position: static;
+            height: 250px;
+            width: 380px;
+            padding: 10px;
+            justify-self: center;
+        }
+
+
+
+
+
+        #noticias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #33658a;
+            padding: 0 0 20px;
+        }
+
+        .noticia {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 260px;
+            margin: 10px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+        }
+
+        #titulonoticias {
+            text-align: center;
+            font-size: 40px;
+            background-color: #33658a;
+            padding: 20px;
+            color: white;
+        }
+
+
+        .noticia i {
+            display: block;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .noticia h3 {
+            font-size: 200%;
+            margin-bottom: 10px;
+            text-align: center;
+
+        }
+
+        .noticia p {
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+       
+
+
+
+
+
+        #depoimentos {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            
+        }
+
+        .depoimento {
+            width: 45%;
+            padding: 10px;
+        }
+
+        .foto {
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin-right: 15px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .depoimento p, .depoimento h4 {
+            margin: 0 0 8px 0;
+        }
+
+
+
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: gray;
+            align-items: center;
+            padding: 5px 30px;
+            color: white;
+        }
+
+        nav a {
+            /*background-color: black;*/
+            color: white;
+            padding: 10px 15px;
+            margin: 0px 2px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="conteiner">
+
+        <div id="grupo01">
+
+
+            <section id="inicio">
+
+                <header>
+                    <img src="./ChatExpert.png" alt="">
+                </header>
+            </section>
+
+
+
+            <section id="principal">
+                <img src="./atendimento.png" alt="">
+                <div>
+                    <h2>Revolucione o WhatsApp da sua Empresa !</h2>
+                    <p>O ChatExpert é mais do que uma plataforma de atendimento - é sua central de comunicação inteligente,
+                        projetada para simplificar e potencializar as interações com seus clientes.
+                    </p>
+                    <button>Experimente Grátis</button>
+                </div>
+            </section>
+
+
+
+            <div id="titulonoticias">
+                <h5>Potencialize seu atendimento e maximize suas vendas</h5>
+            </div>
+
+            <section id="noticias">
+
+                <div class="noticia">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <h3>Ciclo Completo</h3>
+                    <p>Acesse insights valiosos com relatórios personalizáveis e dashboards intuitivos para tomada de
+                        decisões estratégicas.</p>
+                </div>
+
+                <div class="noticia">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Centralização</h3>
+                    <p>Centralize todas as interações em um único lugar para um atendimento eficiente.</p>
+                </div>
+
+                <div class="noticia">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h3>Automação</h3>
+                    <p>Organize e automatize interações para nutrir relacionamentos com seus clientes.</p>
+                </div>
+
+                <div class="noticia">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <h3>Análise e Relatórios</h3>
+                    <p>Acesse insights valiosos com relatórios personalizáveis e dashboards intuitivos para tomada de
+                        decisões estratégicas.</p>
+                </div>
+
+                <div class="noticia">
+                    <i class="fa-solid fa-chart-diagram"></i>
+                    <h3>Segmentação Inteligente</h3>
+                    <p>Agrupe seus clientes com base em critérios personalizados para direcionar campanhas e ofertas de
+                        forma eficaz.</p>
+                </div>
+
+
+
+            </section>
+
+           
+
+        </div>
+    </div>
+    <div id="grupo02">
+
+        <section id="depoimentos">
+
+            <div class="depoimento">
+                <div class="foto"><img src="./avatarfem.png" alt="" style="width: 150px; height: 150px;"></div>
+                <p>O ChatExpert revolucionou nosso atendimento. Conseguimos aumentar nossas vendas em 40% com a
+                    automação inteligente.</p>
+                <h4>- Maria Silva</h4>
+            </div>
+
+
+            <div class="depoimento">
+                <div class="foto"><img src="./avatarmas.png" alt="" style="width: 150px; height: 150px;"></div>
+                <p>Excelente plataforma! Conseguimos centralizar todos os canais e melhorar muito a experiência dos
+                    clientes.</p>
+                <h4>- João Santos</h4>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <h1>ChatExpert</h1>
+            <nav id="final">
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            </nav>
+        </footer>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
