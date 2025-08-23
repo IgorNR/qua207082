@@ -18,6 +18,7 @@
             width: 1000px;
             border: 2px solid gray;
             background-color: white;
+            font: 100% "Verdana";
         }
 
         html {
@@ -55,51 +56,75 @@
 
 
 
-
+        #principal {
+            /* bloco inteiro */
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 30px;
+        }
 
         #principal h2 {
+            /* Titulo principal */
             font-size: 230%;
-            max-width: 250px;
+            /* max-width: 250px;*/
             font-weight: bold;
         }
 
         #principal p {
+            /* texto abaixo */
             margin-top: 20px;
-            font-size: 95%;
-            max-width: 50%;
-
+            font-size: 100%;
+            /* max-width: 50%;*/
         }
 
         #principal button {
+            /* botão */
             padding: 20px;
             margin: 30px 0;
             width: 300px;
-            background-color: gray;
+            background-color: #33658a;
             border: 2px solid black;
             font-weight: bold;
             font-size: 130%;
+            border-radius: 18px;
+            animation: pulso 0.8s infinite;
+        }
+
+        @keyframes pulso {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.08);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        #principal button:hover {
+            transform: rotate(15deg);
+            transition: transform 0.s ease-in-out;
+            background-color: rgba(118, 126, 202, 0.274);
         }
 
         #principal div {
+            /* titulo e texto */
             max-width: 420px;
             margin: 0;
             padding: 0 10px;
+            text-align: center;
         }
-
-        #principal {
-            text-align: left;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 30px;
-
-        }
-
 
         #principal img {
+            /* imagem */
             position: static;
-            height: 250px;
-            width: 380px;
+            /*height: 250px;*/
+            width: 500px;
             padding: 10px;
             justify-self: center;
         }
@@ -113,7 +138,7 @@
             flex-wrap: wrap;
             justify-content: center;
             background-color: #33658a;
-            padding: 0 0 20px;
+            padding: 0 0 40px;
         }
 
         .noticia {
@@ -126,7 +151,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            
+
 
         }
 
@@ -148,7 +173,7 @@
         }
 
         .noticia h3 {
-            font-size: 200%;
+            font-size: 180%;
             margin-bottom: 10px;
             text-align: center;
 
@@ -159,7 +184,7 @@
             color: #333;
             text-align: center;
         }
-       
+
 
 
 
@@ -169,7 +194,7 @@
             display: flex;
             justify-content: space-between;
             padding: 30px;
-            
+
         }
 
         .depoimento {
@@ -186,7 +211,8 @@
             justify-content: center;
         }
 
-        .depoimento p, .depoimento h4 {
+        .depoimento p,
+        .depoimento h4 {
             margin: 0 0 8px 0;
         }
 
@@ -232,7 +258,8 @@
                 <img src="../exemplos/atendimento.png" alt="">
                 <div>
                     <h2>Revolucione o WhatsApp da sua Empresa !</h2>
-                    <p>O ChatExpert é mais do que uma plataforma de atendimento - é sua central de comunicação inteligente,
+                    <p>O ChatExpert é mais do que uma plataforma de atendimento - é sua central de comunicação
+                        inteligente,
                         projetada para simplificar e potencializar as interações com seus clientes.
                     </p>
                     <button>Experimente Grátis</button>
@@ -242,7 +269,7 @@
 
 
             <div id="titulonoticias">
-                <h5>Potencialize seu atendimento e maximize suas vendas</h5>
+                <h5>Potencialize seu atendimento !</h5>
             </div>
 
             <section id="noticias">
@@ -284,7 +311,7 @@
 
             </section>
 
-           
+
 
         </div>
     </div>
@@ -293,7 +320,8 @@
         <section id="depoimentos">
 
             <div class="depoimento">
-                <div class="foto"><img src="../exemplos/avatarfem.png" alt="" style="width: 150px; height: 150px;"></div>
+                <div class="foto"><img src="../exemplos/avatarfem.png" alt="" style="width: 150px; height: 150px;">
+                </div>
                 <p>O ChatExpert revolucionou nosso atendimento. Conseguimos aumentar nossas vendas em 40% com a
                     automação inteligente.</p>
                 <h4>- Maria Silva</h4>
@@ -301,7 +329,8 @@
 
 
             <div class="depoimento">
-                <div class="foto"><img src="../exemplos/avatarmas.png" alt="" style="width: 150px; height: 150px;"></div>
+                <div class="foto"><img src="../exemplos/avatarmas.png" alt="" style="width: 150px; height: 150px;">
+                </div>
                 <p>Excelente plataforma! Conseguimos centralizar todos os canais e melhorar muito a experiência dos
                     clientes.</p>
                 <h4>- João Santos</h4>
