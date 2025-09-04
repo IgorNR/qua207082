@@ -1,3 +1,16 @@
 const prompt = require("prompt-sync")() // adiciona pacote prompt-sync
 const pessoas = Number(prompt("Nº Pessoas: ")) // lê dados de entrada
-console.log(`Qt pessoas: ${pessoas}`) 
+
+const peixes = Number(prompt("Nº peixes: "))
+
+let pagar
+
+if(peixes <= pessoas){
+    pagar = pessoas * 20
+}else{
+    pegar = (pessoas * 20) + ((peixes - pessoas) * 12)
+}
+
+
+
+console.log(`Pagar R$: ${pagar.toFixed(2)}`) 
