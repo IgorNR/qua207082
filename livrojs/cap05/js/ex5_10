@@ -1,0 +1,24 @@
+const prompt = require("prompt-sync")()
+const valor = prompt("Valor R$: ")
+const num = Number(prompt("Nº de Parcelas: "))
+
+const valorParcelas = Math.floor(valor/num) // calcula valor sem decimais
+const valorFinal = valorParcelas + (valor % num)  // calcula parcela final
+
+
+for(let i = 1; i < num; i++){
+    console.log(`${i}ª parcela: R$ ${valorParcelas.toFixed(2)}`)
+}
+
+console.log(`${num}ª parcela: R$ ${valorFinal.toFixed(2)}`)
+
+{/*
+valorParcelas 
+91,50 / 3 = 30,5 --> 30 arrendoda pra baixo
+
+
+valorFinal
+30 + (91.50 % 3) 
+91.50 % 3 = 1.50
+30 + 1.50 = 31.50
+*/}
