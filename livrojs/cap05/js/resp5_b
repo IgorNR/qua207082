@@ -1,0 +1,18 @@
+const frm = document.querySelector("form") 
+const resp = document.querySelector("pre")
+
+frm.addEventListener("submit", (e) =>{ 
+    e.preventDefault()
+
+    let quantidade = Number(frm.inQuantidade.value)
+    const ano = Number(frm.inAnos.value)
+    
+    for (let i = 1; i <= ano; i++) {
+        resp.innerText += `${i}º Ano: ${quantidade} Chinchilas \n`
+        quantidade *= 3          
+    }
+    
+
+})
+
+
