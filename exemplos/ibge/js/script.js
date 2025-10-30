@@ -27,3 +27,14 @@ frm.inEstado.addEventListener("change",() =>{
     frm.inMunicipio.innerHTML = ""
     carregarSelect(frm.inMunicipio, `estados/${uf}/municipios`)
 })
+
+frm.inRegiao.addEventListener("change", () =>{
+    const regiao = frm.inRegiao.value
+    frm.inEstado.innerHTML = `<option value="">Selecione</option>`
+    frm.inMunicipio.innerHTML = ""
+    if(regiao == ""){
+        carregarSelect(frm.inEstado, `estado`)
+    } else {
+        carregarSelect(frm.inEstado, `regioes/${regiao}/estados`)
+    }
+})
